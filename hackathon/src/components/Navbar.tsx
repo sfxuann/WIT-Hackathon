@@ -55,7 +55,7 @@ const Navbar = () => {
             </MenuButton>
             <Menu>
               <Link href="/profile">
-                <MenuItem>Edit Profile</MenuItem>
+                <MenuItem>View Profile</MenuItem>
               </Link>
               <MenuItem>Settings</MenuItem>
               <MenuItem>Logout</MenuItem>
