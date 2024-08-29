@@ -5,7 +5,6 @@ interface ProgressBarProps {
 
 const ProgressBar: React.FC<ProgressBarProps> = ({ progress }) => {
   return (
-    
     <Box sx={{ bgcolor: 'white', width: '70%' }}>
       <LinearProgress
         determinate

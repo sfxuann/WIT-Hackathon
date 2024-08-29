@@ -1,6 +1,10 @@
 import { Stack, Typography, Card, CardContent, Button } from '@mui/joy';
 import ProgressBar from '../components/ProgressBar';
 import { useState } from 'react';
+// import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'wouter';
+
+
 
 const MqQuestionPage = () => {
     const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -8,6 +12,7 @@ const MqQuestionPage = () => {
     const [isCorrect, setIsCorrect] = useState(false);
 
     const correctAnswer = '0 1 2';
+    const [, navigate] = useLocation();
 
     const handleAnswerClick = (answer: any) => {
         setSelectedAnswer(answer);
@@ -24,7 +29,7 @@ const MqQuestionPage = () => {
     };
 
     const handleNextQuestion = () => {
-        // reset states
+        navigate('/nextq');
         setSelectedAnswer(null);
         setResult('');
         setIsCorrect(false);

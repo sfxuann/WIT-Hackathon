@@ -6,6 +6,7 @@ import Stack from '@mui/joy/Stack';
 import Navbar from './components/Navbar.tsx';
 import QuizPage from './pages/QuizPage.tsx';
 import MqQuestionPage from './pages/MqPage.tsx';
+import NextQPage from './pages/NextQ.tsx';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/profile" component={ProfilePage} />
         <Route path="/quiz" component={QuizPage} />
         <Route path="/mq" component={MqQuestionPage} />
+        <Route path="/nextq" component={NextQPage} />
       </Switch>
     </CssVarsProvider>
 
