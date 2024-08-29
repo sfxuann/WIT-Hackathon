@@ -44,8 +44,8 @@ const MqQuestionPage = () => {
             sx={{ bgcolor: '#white' }}
         >   
             <Stack direction="row" spacing={3} alignItems="center" justifyContent="center" sx={{ width: '80%' }}>
-                <ProgressBar progress={20} />
-                <Typography level='h4' sx={{ color: 'black'}}>Q 2/10</Typography>
+                <ProgressBar progress={10} />
+                <Typography level='h4' sx={{ color: 'black'}}>Q 1/10</Typography>
             </Stack>
 
             <Typography level='h3'>What will be the output of the following?</Typography>
