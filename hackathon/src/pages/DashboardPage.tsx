@@ -38,7 +38,7 @@ const DashboardPage = () => {
           description="While and for loops"
           showButton={true}
           completed={false}
-          link="/"
+          link="/mq"
         />
         <ExerciseCard
           title="5. Loops pt2"
