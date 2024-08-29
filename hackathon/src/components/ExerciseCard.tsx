@@ -1,15 +1,16 @@
-import { Stack, Card, Button, IconButton } from '@mui/joy';
+import { Stack, Card, Button, IconButton, Link } from '@mui/joy';
 import Typography from '@mui/joy/Typography';
-import LockIcon from '@mui/icons-material/Lock'; // Import the lock icon
+import LockIcon from '@mui/icons-material/Lock';
 
 interface ExerciseCardProps {
   title: string;
   description: string;
+  link: string;
   showButton?: boolean;
   completed?: boolean;
 }
 
-function ExerciseCard({ title, description, showButton, completed }: ExerciseCardProps) {
+function ExerciseCard({ title, description, link, showButton, completed }: ExerciseCardProps) {
   return (
     <Card
       sx={{
@@ -35,12 +36,18 @@ function ExerciseCard({ title, description, showButton, completed }: ExerciseCar
           <Typography level="body-md">{description}</Typography>
         </Stack>
         {showButton ? (
-          <Button
-            variant="solid"
-            sx={{ width: '50%', alignSelf: 'center' }}
+          <Link
+            href={link}
+            underline="none"
+            sx={{ display: 'block', width: '50%', alignSelf: 'center' }}
           >
-            {completed ? 'Review' : 'Start'}
-          </Button>
+            <Button
+              variant="solid"
+              sx={{ width: '100%' }}
+            >
+              {completed ? 'Review' : 'Start'}
+            </Button>
+          </Link>
         ) : (
           <IconButton>
             <LockIcon />

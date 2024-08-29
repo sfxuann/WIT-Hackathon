@@ -5,7 +5,6 @@ import MenuButton from '@mui/joy/MenuButton';
 import Dropdown from '@mui/joy/Dropdown';
 import IconButton from '@mui/joy/IconButton';
 import Notifications from '@mui/icons-material/Notifications';
-import Person from '@mui/icons-material/Person';
 import Home from '@mui/icons-material/Home';
 import Avatar from '@mui/joy/Avatar';
 import Stack from '@mui/joy/Stack';
