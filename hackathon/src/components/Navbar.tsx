@@ -5,7 +5,6 @@ import MenuButton from '@mui/joy/MenuButton';
 import Dropdown from '@mui/joy/Dropdown';
 import IconButton from '@mui/joy/IconButton';
 import Notifications from '@mui/icons-material/Notifications';
-import Person from '@mui/icons-material/Person';
 import Home from '@mui/icons-material/Home';
 import Avatar from '@mui/joy/Avatar';
 import Stack from '@mui/joy/Stack';
@@ -55,7 +54,7 @@ const Navbar = () => {
             </MenuButton>
             <Menu>
               <Link href="/profile">
-                <MenuItem>Edit Profile</MenuItem>
+                <MenuItem>View Profile</MenuItem>
               </Link>
               <MenuItem>Settings</MenuItem>
               <MenuItem>Logout</MenuItem>
