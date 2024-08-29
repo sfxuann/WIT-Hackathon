@@ -53,8 +53,10 @@ const MqQuestionPage = () => {
             <Card variant='soft' sx={{ width: 450, height: 100, backgroundColor: '#D9D9D9'}}>
                 <CardContent >
                 <Stack alignItems="center" justifyContent="center">
-                    <Typography level='body-lg'>for i in range(3):</Typography>
-                    <Typography level='body-lg'>print(i)</Typography>
+                    <pre style={{ whiteSpace: 'pre-wrap', textAlign: 'left'}}>
+{`for i in range(3):
+    print(i)`}
+                    </pre>      
                 </Stack>
                 </CardContent>
             </Card>
@@ -95,7 +97,9 @@ const MqQuestionPage = () => {
                 </Card>
             </Stack>    
 
-            <Stack direction="row" justifyContent="flex-end" sx={{ width: '49%' }} gap={21}>
+            <Stack direction="row" alignItems="center" justifyContent="flex-end"
+                spacing={20}
+                sx={{ width: '100%', maxWidth: 625 }}>
                 {result && (
                     <Typography level='body-lg' sx={{ color: result === 'Correct! +6pts' ? 'green' : 'red' }}>{result}</Typography>
                 )}
