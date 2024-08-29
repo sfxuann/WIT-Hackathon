@@ -1,16 +1,22 @@
 import './App.css'
-import { Route, Switch } from 'wouter';
+import { Route, Switch, Link} from 'wouter';
 import ProfilePage from './pages/ProfilePage.tsx';
 import { Button, CssBaseline, CssVarsProvider } from '@mui/joy';
+import Stack from '@mui/joy/Stack';
+import Navbar from './components/Navbar.tsx';
+import QuizPage from './pages/QuizPage.tsx';
+
 
 function App() {
 
   return (
     <CssVarsProvider>
       <CssBaseline />
+      <Navbar />
       <Switch>
         <Route path="/" component={LandingPage} />
         <Route path="/profile" component={ProfilePage} />
+        <Route path="/quiz" component={QuizPage} />
       </Switch>
     </CssVarsProvider>
 
@@ -20,10 +26,14 @@ function App() {
 const LandingPage = () => {
   return (
     <>
-      <Button variant="solid">Hello world</Button>
+    <Stack height="100%" width="100%" justifyContent="center" alignItems="center">
+      <Link href="/quiz">
+          <Button variant="solid">quiz</Button>
+      </Link>
       <div>
         <h1>start page</h1>
       </div>
+    </Stack>
     </>
   )
 }
