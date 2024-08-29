@@ -5,6 +5,7 @@ import { Button, CssBaseline, CssVarsProvider } from '@mui/joy';
 import Stack from '@mui/joy/Stack';
 import Navbar from './components/Navbar.tsx';
 import QuizPage from './pages/QuizPage.tsx';
+import MqQuestionPage from './pages/MqPage.tsx';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" component={LandingPage} />
         <Route path="/profile" component={ProfilePage} />
         <Route path="/quiz" component={QuizPage} />
+        <Route path="/mq" component={MqQuestionPage} />
       </Switch>
     </CssVarsProvider>
 
