@@ -10,7 +10,7 @@ import Avatar from '@mui/joy/Avatar';
 import Stack from '@mui/joy/Stack';
 import Card from '@mui/joy/Card';
 import Typography from '@mui/joy/Typography';
-
+import TerminalIcon from '@mui/icons-material/Terminal';
 const Navbar = () => {
 
   return (
@@ -25,7 +25,7 @@ const Navbar = () => {
     >
       <Stack direction="row" justifyContent="space-between" alignItems="center">
         <Link href="/" style={{textDecoration: 'none' }}>
-          <Typography level="body-lg">(insert logo :P)</Typography>
+          <TerminalIcon sx={{fontSize:"50px", color:"black"}}/>
         </Link>
 
         <Stack direction="row" spacing={2} alignItems="center">

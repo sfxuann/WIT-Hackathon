@@ -5,9 +5,12 @@ import { Typography, Button, CssBaseline, CssVarsProvider } from '@mui/joy';
 import Stack from '@mui/joy/Stack';
 import Navbar from './components/Navbar.tsx';
 import QuizPage from './pages/QuizPage.tsx';
+import MqQuestionPage from './pages/MqPage.tsx';
+import NextQPage from './pages/NextQ.tsx';
 import DashboardPage from './pages/DashboardPage.tsx';
 import LeaderboardPage from './pages/LeaderboardPage.tsx';
 import TrafficLightPage from './pages/TrafficLightPage.tsx';
+import QuestionDragDropPage from './pages/QuestionDragDropPage.tsx';
 
 
 function App() {
@@ -20,8 +23,12 @@ function App() {
         <Route path="/" component={LandingPage} />
         <Route path="/profile" component={ProfilePage} />
         <Route path="/quiz" component={QuizPage} />
+        <Route path="/mq" component={MqQuestionPage} />
+        <Route path="/nextq" component={NextQPage} />
         <Route path="/dashboard" component={DashboardPage} />
         <Route path="/leaderboard" component={LeaderboardPage} />
+
+        <Route path="/question-drag-drop" component={QuestionDragDropPage} />
         <Route path="/projects/trafficlightsystem" component={TrafficLightPage} />
       </Switch>
     </CssVarsProvider>
