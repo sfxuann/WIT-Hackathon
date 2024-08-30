@@ -38,7 +38,7 @@ const ProfilePage = () => {
             <Typography level="body-md">Simple calculator</Typography>
           </Link>
           <Link
-            href="/projects/traffic-light-system"
+            href="/projects/trafficlightsystem"
             underline="none"
             sx={{
               display: 'block',

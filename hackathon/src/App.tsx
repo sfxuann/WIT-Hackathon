@@ -7,6 +7,7 @@ import Navbar from './components/Navbar.tsx';
 import QuizPage from './pages/QuizPage.tsx';
 import DashboardPage from './pages/DashboardPage.tsx';
 import LeaderboardPage from './pages/LeaderboardPage.tsx';
+import TrafficLightPage from './pages/TrafficLightPage.tsx';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/quiz" component={QuizPage} />
         <Route path="/dashboard" component={DashboardPage} />
         <Route path="/leaderboard" component={LeaderboardPage} />
+        <Route path="/projects/trafficlightsystem" component={TrafficLightPage} />
       </Switch>
     </CssVarsProvider>
 
