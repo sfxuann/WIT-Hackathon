@@ -9,6 +9,7 @@ import MqQuestionPage from './pages/MqPage.tsx';
 import NextQPage from './pages/NextQ.tsx';
 import DashboardPage from './pages/DashboardPage.tsx';
 import LeaderboardPage from './pages/LeaderboardPage.tsx';
+import TrafficLightPage from './pages/TrafficLightPage.tsx';
 import QuestionDragDropPage from './pages/QuestionDragDropPage.tsx';
 
 
@@ -26,8 +27,9 @@ function App() {
         <Route path="/nextq" component={NextQPage} />
         <Route path="/dashboard" component={DashboardPage} />
         <Route path="/leaderboard" component={LeaderboardPage} />
-        
+
         <Route path="/question-drag-drop" component={QuestionDragDropPage} />
+        <Route path="/projects/trafficlightsystem" component={TrafficLightPage} />
       </Switch>
     </CssVarsProvider>
 

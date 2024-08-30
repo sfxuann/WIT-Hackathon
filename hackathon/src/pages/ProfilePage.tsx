@@ -9,9 +9,10 @@ const ProfilePage = () => {
             <Avatar>BC</Avatar>
             <Typography level="h4" fontWeight="bold">Bea Cruz</Typography>
             <Typography level="body-md">bea@gmail.com</Typography>
+            <Typography level="body-md">School: UNSW</Typography>
 
-            <Typography level="body-sm">Progress: 40</Typography>
-            <Typography level="body-md">Level: 3</Typography>
+            <Typography level="body-sm">Module: 3</Typography>
+            <Typography level="body-md">Progress 40%</Typography>
           </Stack>
         </CardContent>
       </Card>
@@ -34,11 +35,13 @@ const ProfilePage = () => {
               },
             }}
           >
-            <Typography level="h4" fontWeight="bold">Basic Calculator</Typography>
-            <Typography level="body-md">Simple calculator</Typography>
+            <Stack spacing={1}>
+              <Typography level="h4" fontWeight="bold">Basic Calculator</Typography>
+              <Typography level="body-md">Simple calculator</Typography>
+            </Stack>
           </Link>
           <Link
-            href="/projects/traffic-light-system"
+            href="/projects/trafficlightsystem"
             underline="none"
             sx={{
               display: 'block',
@@ -52,8 +55,10 @@ const ProfilePage = () => {
               },
             }}
           >
-            <Typography level="h4" fontWeight="bold">Traffic Light System</Typography>
-            <Typography level="body-md">Basic traffic light system with if statements</Typography>
+            <Stack spacing={1}>
+              <Typography level="h4" fontWeight="bold">Traffic Light System</Typography>
+              <Typography level="body-md">Basic traffic light system (with variables and conditionals)</Typography>
+            </Stack>
           </Link>
         </CardContent>
       </Card>
