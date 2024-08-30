@@ -29,7 +29,7 @@ const MqQuestionPage = () => {
     };
 
     const handleNextQuestion = () => {
-        navigate('/nextq');
+        navigate('/question-drag-drop');
         setSelectedAnswer(null);
         setResult('');
         setIsCorrect(false);
