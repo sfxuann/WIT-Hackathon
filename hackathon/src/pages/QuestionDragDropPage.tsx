@@ -54,10 +54,10 @@ const QuestionDragDropPage = () => {
 				{/* <Typography level="h1">this is the drag and drop page</Typography> */}
 				<Stack flexDirection="row" justifyContent="center" alignItems="center" gap="20px" width="80%">
 					<ProgressBar progress={20}></ProgressBar>
-					<Typography level="h2">Q 2/10</Typography>
+					<Typography level="h4" sx={{ color: 'black'}}>Q 2/10</Typography>
 				</Stack>
 
-				<Typography marginY="60px" level="h2">Rearrange the following code to fix the error</Typography>
+				<Typography marginY="60px" level="h3">Rearrange the following code to fix the error</Typography>
 				<List sx={{width: "40%", gap:"10px", height: "100px"}} >
 					
 					<ListItem  >
